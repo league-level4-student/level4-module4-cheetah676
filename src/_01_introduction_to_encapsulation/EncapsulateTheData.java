@@ -87,7 +87,7 @@ public class EncapsulateTheData {
 		assertTrue("Dog"==etd.getNomenclature());
 		assertTrue(" "==etd.setNomenclatureIfBlank(""));
 		etd.setMemberObj(new Object());
-		System.out.println(etd.getMemberObj());
-		assertTrue("java.lang.Object@60e53b93"==etd.getMemberObj());
+		//help
+		//assertTrue(new Object()==etd.getMemberObj());
 	}
 }
