@@ -40,9 +40,12 @@ public class PolymorphWindow extends JPanel implements ActionListener{
    	 
    	polymorphs=new ArrayList <Polymorph>();
   	 polymorphs.add(new BluePolymorph(50, 50, 50, 50));
-  	 polymorphs.add(new RedMorph(100, 100, 50, 50));
+  	 polymorphs.add(new RedMorph(110, 110, 50, 50));
   	 polymorphs.add(new MovingMorph(0, 0, 50, 50));
-  	 polymorphs.add(new OrbitMorph(150, 150, 50, 50));
+  	 polymorphs.add(new OrbitMorph(50, 25, 50, 50));
+  	 polymorphs.add(new CatMorph(250, 250, 50, 50));
+  	 
+  	 polymorphs.add(new MessageMorph(310, 310, 50, 50));
     }
     
     public void paintComponent(Graphics g){

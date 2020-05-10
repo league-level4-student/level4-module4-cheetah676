@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 
 public class OrbitMorph extends Polymorph{
-int i=0;
+double i=-1000000;
 	OrbitMorph(int x, int y, int width, int height) {
 		super(x, y, width, height);
 	}
@@ -19,12 +19,10 @@ public void update() {
 	double radian=speed*i;
 	  double increaseX = 5 * Math.cos(radian);
 	    double increaseY = 5 * Math.sin(radian);
-	    System.out.println(increaseX);
-	    System.out.println(increaseY);
 	    x+=increaseX;
 	    y+=increaseY;
-	    y+=.999;
-	    x+=.999;
-	    i++;
+	    y+=.9;
+	    x+=.9;
+	    i+=.5;
 }
 }
