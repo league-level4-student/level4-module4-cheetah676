@@ -44,7 +44,7 @@ public class PolymorphWindow extends JPanel implements ActionListener{
   	 polymorphs.add(new MovingMorph(0, 0, 50, 50));
   	 polymorphs.add(new OrbitMorph(50, 25, 50, 50));
   	 polymorphs.add(new CatMorph(250, 250, 50, 50));
-  	 
+  	 polymorphs.add(new ImageMorph(250, 250, 50, 50));
   	 polymorphs.add(new MessageMorph(310, 310, 50, 50));
     }
     
