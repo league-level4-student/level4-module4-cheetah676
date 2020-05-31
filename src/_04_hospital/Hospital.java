@@ -28,4 +28,20 @@ ArrayList <Patient> patient=new ArrayList<Patient>();
 		return patient;
 	}
 
+	public void assignPatientsToDoctors() {
+		// TODO Auto-generated method stub
+	for(int i=0; i<doctor.size(); i++) {
+		try {
+			for(int j=patient.size()-1; j>=0; j--) {
+			doctor.get(i).assignPatient(patient.get(j));
+			System.out.println(j);
+			patient.remove(j);
+			}
+		} catch (DoctorFullException e) {
+			// TODO Auto-generated catch block
+			System.out.println(i+1 +" doctors full.");
+		}
+	}
+	}
+
 }
